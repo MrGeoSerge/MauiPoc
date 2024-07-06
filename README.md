@@ -51,19 +51,19 @@ Open Visual Studio and create a new .NET MAUI App project.
     private static MauiAppBuilder RegisterFirebaseServices(this MauiAppBuilder builder)
     {
         builder.ConfigureLifecycleEvents(events => {
-#if IOS
+        #if IOS
             events.AddiOS(iOS => iOS.WillFinishLaunching((app, launchOptions) => {
                 CrossFirebase.Initialize();
                 FirebaseCloudMessagingImplementation.Initialize();
                 return true;
             }));
-#elif ANDROID
+         #elif ANDROID
             events.AddAndroid(android => android.OnCreate((activity, _) =>
             {
                 CrossFirebase.Initialize(activity);
                 FirebaseAnalyticsImplementation.Initialize(activity);
             }));
-#endif
+         #endif
         });
 
         CrossFirebaseCloudMessaging.Current.NotificationTapped += Current_NotificationTapped;
