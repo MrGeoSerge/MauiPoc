@@ -398,3 +398,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Firebase admin SDK JSON file
+SendPushNotificationPoc/mauipocpushnotification-firebase-adminsdk.json
