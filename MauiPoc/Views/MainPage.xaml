@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiPoc.ViewModels"
+             x:Class="MauiPoc.Views.MainPage"
+             x:DataType="viewmodel:MainPageViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Device Token" FontSize="20"/>
+            <Editor x:Name="editorInput" FontSize="20" Text="{Binding Token}" MinimumHeightRequest="300"/>
+            <Button Text="Copy to buffer" Command="{Binding CopyToBufferCommand}"/>
+            <Button Text="Send to API" Command="{Binding SendDataCommand}" Margin="10" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

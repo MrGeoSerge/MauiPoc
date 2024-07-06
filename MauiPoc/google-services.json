@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287541122939",
+    "project_id": "mauipocpushnotification",
+    "storage_bucket": "mauipocpushnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287541122939:android:fd6e6fee5e582db7a4cfde",
+        "android_client_info": {
+          "package_name": "com.companyname.mauipocpushnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT0tCl1ogqlbLfxqQfgBIT1N-k4rMUBXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
